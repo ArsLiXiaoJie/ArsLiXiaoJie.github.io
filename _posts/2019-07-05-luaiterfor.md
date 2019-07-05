@@ -58,7 +58,7 @@ end
 k，v 为变量列表，pairs(t)为表达式列表
 ```
 
-##### 泛型for的执行过程
+### 泛型for的执行过程
 
 - 初始化，计算in后面表达式的值，表达式应该返回泛型for需要的三个值：迭代函数、状态常量、控制变量；如果返回值不够三个用nil补齐，多出则忽略。
 - 将状态变量和控制变量作为参数调用迭代函数（注意：对于for结构来说，状态常量没有用处，仅仅在初始化的时候获取值并传递给迭代函数）。
@@ -104,7 +104,7 @@ end
 
 
 
-##### pairs
+### pairs
 
 ```lua
 function pairs(t)
@@ -158,7 +158,7 @@ call iter :     nil     nil
 
 
 
-##### ipairs
+### ipairs
 
 ```lua
 local tt = {}
@@ -209,7 +209,7 @@ call iter :     nil     nil
 
 
 
-##### next
+### next
 
 next 函数原型是 **next( table [ , index] )**
 
